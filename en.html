@@ -181,29 +181,32 @@ def connect_to_server(server_ip, username):
 # Main function to handle user choice
 def main():
     parser = argparse.ArgumentParser(description="P2P Messaging Service")
-    parser.add_argument('--language', choices=['EN'], default='EN', help="Choose language: EN (English)")
+    parser.add_argument('--host', action='store_true', help="Host a server")
     args = parser.parse_args()
     
-    # Print welcome message and menu options
-    print(get_message('SERVER_WELCOME'))
-    print(get_message('SERVER_CHOICE'))
-    print(get_message('SERVER_CONNECT'))
-    print(get_message('SERVER_EXIT'))
-    
-    while True:
-        choice = input(get_message('SERVER_ENTER_CHOICE'))
+    if args.host:
+        start_server()
+    else:
+        # Print welcome message and menu options
+        print(get_message('SERVER_WELCOME'))
+        print(get_message('SERVER_CHOICE'))
+        print(get_message('SERVER_CONNECT'))
+        print(get_message('SERVER_EXIT'))
         
-        if choice == '1':
-            start_server()
-        elif choice == '2':
-            server_ip = input("Enter server IP: ")
-            username = input(get_message('CLIENT_ENTER_NAME'))
-            connect_to_server(server_ip, username)
-        elif choice == '3':
-            print("Exiting...")
-            break
-        else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
+        while True:
+            choice = input(get_message('SERVER_ENTER_CHOICE'))
+            
+            if choice == '1':
+                start_server()
+            elif choice == '2':
+                server_ip = input("Enter server IP: ")
+                username = input(get_message('CLIENT_ENTER_NAME'))
+                connect_to_server(server_ip, username)
+            elif choice == '3':
+                print("Exiting...")
+                break
+            else:
+                print("Invalid choice. Please enter 1, 2, or 3.")
 
 if __name__ == "__main__":
     main()
