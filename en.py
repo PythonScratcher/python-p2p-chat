@@ -9,7 +9,7 @@ connected_clients = []
 # Function to get message
 def get_message(key, **kwargs):
     if key == 'SERVER_WELCOME':
-        return "Welcome to P2P Messaging Service"
+        return "P2P Messaging Service"
     elif key == 'SERVER_CHOICE':
         return "1. Host a server"
     elif key == 'SERVER_CONNECT':
