@@ -1,3 +1,5 @@
+## Offical server: `141.147.101.73`
+
 ### Cymraeg 
 (english scroll down)
 ---
