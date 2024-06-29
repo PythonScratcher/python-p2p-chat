@@ -1,5 +1,5 @@
-### Cymraeg (`cy.md`)
-
+### Cymraeg 
+(english scroll down)
 ---
 
 # Gwasanaeth Negeseu P2P
@@ -19,19 +19,19 @@ Dyma wasanaeth negeseu Peer-to-Peer (P2P) syml wedi'i weithredu yn Python. Mae'n
 
    **Hostio Gweinydd:**
    - Agor teml neu banel orchymyn.
-   - Ewch i'r cyfeiriadur lle mae `cy.py` wedi'i leoli.
+   - Ewch i'r cyfeiriadur lle mae `chat.py` wedi'i leoli.
    - Rhedwch y sgript gyda'r dewis `--host` i ddechrau ar hostio gweinydd.
      ```bash
-     python cy.py --host
+     python chat.py --host
      ```
    - Bydd y gweinydd yn dechrau gwrando ar bort `12392`. Gall cleientiaid gysylltu â'r gweinydd hwn gan ddefnyddio ei gyfeiriad IP.
 
    **Cysylltu â Gweinydd:**
    - Agor teml neu banel orchymyn.
-   - Ewch i'r cyfeiriadur lle mae `cy.py` wedi'i leoli.
+   - Ewch i'r cyfeiriadur lle mae `chat.py` wedi'i leoli.
    - Rhedwch y sgript heb unrhyw ddewisiadau i weld y dewislen.
      ```bash
-     python cy.py
+     python chat.py
      ```
    - Dewiswch yr opsiwn `2` i gysylltu â gweinydd.
    - Rhowch gyfeiriad IP y gweinydd pan gofynnir.
@@ -51,8 +51,8 @@ Dyma wasanaeth negeseu Peer-to-Peer (P2P) syml wedi'i weithredu yn Python. Mae'n
 Am unrhyw faterion neu awgrymiadau, agorwch fater yn y llyfrgell.
 
 
-### English  (`en.md`)
-
+### English 
+(there was welsh because some of my friends are welsh lol)
 ---
 
 # P2P Messaging Service
@@ -72,19 +72,19 @@ This is a simple Peer-to-Peer (P2P) messaging service implemented in Python. It 
 
    **Hosting a Server:**
    - Open a terminal or command prompt.
-   - Navigate to the directory where `en.py` is located.
+   - Navigate to the directory where `chat.py` is located.
    - Run the script with the `--host` option to start hosting a server.
      ```bash
-     python en.py --host
+     python chat.py --host
      ```
    - The server will start listening on port `12392`. Clients can connect to this server using its IP address.
 
    **Connecting to a Server:**
    - Open a terminal or command prompt.
-   - Navigate to the directory where `en.py` is located.
+   - Navigate to the directory where `chat.py` is located.
    - Run the script without any options to see the menu.
      ```bash
-     python en.py
+     python chat.py
      ```
    - Choose option `2` to connect to a server.
    - Enter the IP address of the server when prompted.
